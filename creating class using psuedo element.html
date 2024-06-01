@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            
+        }
+        .bg{
+            background-color: #B1BDC5;
+            height: 100px;
+            width: 100%;
+        }
+        ul li{
+            display: inline-block;
+            background-color: #b3b8b2 ;
+            padding: 2px 3px;
+            position: relative;
+            margin-top: 20px;
+        }
+        li::before{
+            content: "";
+            height: 2px;
+            width: 100%;
+            transform: scaleX(0);
+            background-color: black;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: 1s;
+
+        }
+        li:hover::before{
+            transform: scaleX(1);
+            /* width: 100%;     */
+            color: #627671;
+            background-color: #627671;
+
+        }
+        li:hover li{
+            color: #627671;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bg">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Catlogs</li>
+        <li>Contact</li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{
+            background-image: url(/iimg/desktop-lsjkr6wg7ctq97qv.jpg);
+            background-size: 200px 150px;
+            height: 150px;
+            width: 200px ;
+            border: 2px solid;
+            border-radius: 10px;
+            border: none;   
+            overflow: hidden;
+            
+        }
+        .cp{
+            height: 150px;
+            width: 200px;
+            border: 2px solid;
+            /* background-color: rgba(0,0,255,0.); */
+            border-radius: 10px;
+            border: none;
+            clip-path: polygon(34% 0, 64% 0, 100% 100%, 0% 100%);
+            transition: 1s;
+        }
+        .img:hover .cp{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            background-color: rgba(0, 0, 128, 0.3);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img">
+        <div class="cp"></div>
+    </div>
+    
+</body>
+</html>
